@@ -12,3 +12,17 @@ export function checkCoordinatesDistance(lat1,lon1,lat2,lon2){
     }
     return d;
 }
+let post ={lat1:0,lon1:0}
+const showPosition = (position) =>{
+    post.lat1 = position.coords.latitude;
+    post.lon1 = position.coords.longitude;
+}
+export const getCoordinate = () => {
+    post= {lat1:0,lon1:0}
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    }
+}
+export const getCurrentLocation = () =>{
+    return post;
+}
