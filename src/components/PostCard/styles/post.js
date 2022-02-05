@@ -29,12 +29,12 @@ export const Resources = styled.div`
     width: 100%;
     background: #eee;
     margin-bottom: 10px;
+    overflow:hidden;
 `;
 
 export const Image = styled.img`
     width: 100%;
-    height: 100%;
-    object-fit: contain;
+    height:100%;
 `;
 
 export const PostDescription = styled.div`

@@ -1,5 +1,5 @@
 import './App.css';
-
+import { getCoordinate } from './utils/checkCoordinatesDistance';
 import {useEffect, useState} from 'react';
 
 import Post from './Post';
@@ -17,6 +17,7 @@ function App() {
       })
     }
     renderElements();
+    getCoordinate();
   },[])
   return (
     <div className="App">
